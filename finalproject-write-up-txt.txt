@@ -1,1 +1,5 @@
-For the project I am doing a weekly music selection page. I will have 7 different cards with images that will flip animate to reveal text. I am adding a map of local record stores.  I will use bootstrap for the layout.  The site will be responsive.
+For the project I am doing a weekly music selection page.
+I will have 7 different cards with images that will flip animate to reveal text. 
+I am adding a map of local record stores.  
+I will use bootstrap for the layout. 
+The site will be responsive.
