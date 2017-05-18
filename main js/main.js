@@ -1,11 +1,13 @@
 $(document).ready(function() {
-    //card
+    //card flip
 $('.card').hover(function() {
   $(this).toggleClass('flipped');
 });
 
+//Script to run Leaflet.js map
     //Map
-  
+
+//Set home location
   var map = L.map('map-container').setView([47.608013, -122.335167]);
 //Add Tile Layers for Open Streets, Satellite, and Map View
 var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -31,6 +33,8 @@ var mapLayers = {
     "Satellite": satLayer,
     "Map View": drawLayer,
 }
+
+	
 L.control.layers(mapLayers).addTo(map);
 osm.addTo(map);
 // markers 3 locations
@@ -49,6 +53,8 @@ var marker3 = L.marker([122.333754]).addTo(map);
 $('a[href*=#]').on('click', function(event){     
    event.preventDefault();
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
-});
 	 
   });
+	
+	
+	
