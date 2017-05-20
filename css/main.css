@@ -1,16 +1,18 @@
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.4em;
   color: #333;
   text-align: center
+ 
 }
 
 .cardWrapper {
-  margin-top: 50px
+  margin-top: 50px;
+  
+  
 }
-
 
 .animation {
   -webkit-transition: all 0.3s ease;
@@ -19,7 +21,6 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 
 .content p {
   font-weight: 300;
@@ -46,11 +47,11 @@ body {
 
 
 .card {
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   cursor: pointer;
   border: 8px solid #333;
-  margin: 20px auto;
+  margin: 10px auto;
 
   -webkit-transition: -webkit-transform 0.6s;
   -moz-transition: -moz-transform 0.6s;
@@ -104,7 +105,7 @@ body {
 }
 
 .card .back {
-  background: #499a91;
+  background: #4286f4;
   -webkit-transform: rotateY( 180deg);
   -moz-transform: rotateY( 180deg);
   -o-transform: rotateY( 180deg);
@@ -128,7 +129,31 @@ h3.cardTitle {
   font-weight: bold;
 }
 #map-container { 
-  height: 400px;
-  width: 600px;
+  height: 350px;
+  width: 550px;
 
 }
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row{
+  margin-left:0;
+  margin-right:0;
+}
+.About{
+  background-color:#bab4b6;
+  font-size:large;
+  margin-left:250px;
+  margin-right:250px;
+  
+}
+
+
+
+
