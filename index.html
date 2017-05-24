@@ -9,14 +9,16 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
         <link rel="stylesheet" href="css/main.css"/>
+			  
 			<script src="main js/main.js"></script>
       </head>
 
     <body>
+			
       <!-- nav bar-->
+	<!--		
  <div class="bs-example">
     <nav role="navigation" class="navbar navbar-default">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -26,33 +28,47 @@
             </button>
             <a href="#" class="navbar-brand">WM</a>
         </div>
-        <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#About">About</a></li>
-							<li><a href="#map">Map</a></li>
+				<li><a href="#map">Map</a></li>
+				<li><a href="#tribute">Tribute to An Artist</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
           <!-- end nav bar-->
-		
-		
-	 
+
+<div id="sidebar"> 
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#map">Map</a></li>
+    <li><a href="#tribute">Tribute to An Artist</a></li>
+   
+  </ul>
+  <div id="sidebar-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+			
      <div class="jumbotron">
          <div class="container">
             <div class="row">
                 <h1>Weekly Music</h1>
                 <h3>Sounds to move you</h3>
+				<div class="duotone darken lighten" id='vinyl' ontouchstart="" ontouchend="" onmouseover="">
         </div>
     </div>
+					 
  </div> <!---container end-->
   <!--about-->
-    <div class="about">
+    <div id="About">
           <h2>About</h2>
-          <p>As the weeks fly by its always nice to have music to take your mind of the stressors and lift your mood.<br> We present to you albums to get you thru your week.</br></p>
+		<p>As the weeks fly by its always nice to have music to take your mind of the stressors and lift your mood.<br> We present to you albums to get you thru your week.	</p>			
         </div>
-		 </div>
 			<!--card-->
   <div class="cardWrapper">
     <!-- first Row -->
@@ -60,13 +76,17 @@
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/RHP-Rollercoaster.jpg" class="img-responsive" />
+            <img src="img/RHP-Rollercoaster.jpg" alt="Red House Painters" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Red House Painters</h3>
               <p>Roller Coaster</p>
-              <p class="description"> Something....</p>
+              <p class="description"> Mark Kozelek and co provide one of their strongest, brooding, melodic album of their career.  Great road trip music with standout tracks including "Grace Cathedral Park"</p>
+				<!--audio-->
+				 <video controls width="100%" height="100%" >
+      <source src="img/Grace Cathedral Park.mp3">
+    </video>
             </div>
           </div>
         </div>
@@ -75,13 +95,13 @@
      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/RyanAdamsprisoner.jpg" class="img-responsive" />
+            <img src="img/RyanAdamsprisoner.jpg"  alt="Ryan Adams" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Ryan Adams</h3>
               <p>Prisoner</p>
-              <p class="description">Something..</p>
+              <p class="description">Ryan Adams defies all expectations for his career instead producing one of his most exciting records of his long varied career. Veering from rock and roll to singer songwriter.</p>
             </div>
           </div>
         </div>
@@ -90,13 +110,14 @@
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/megadeth-peace-sells.jpg" class="img-responsive" />
+            <img src="img/megadeth-peace-sells.jpg" alt="Megadeth" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Megadeth</h3>
               <p>Peace Sells</p>
-              <p class="description"> Something...</p>
+              <p class="description"> This was also the album that pushed Megadeth further into superstardom, and gained them even more positive media attention.Dave Mustaine's vocals are not the best on this record however musically it lives up to the thrash sound I love.   
+</p>
             </div>
           </div>
         </div>
@@ -105,13 +126,13 @@
  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/Arcadefire.jpg" class="img-responsive" />
+            <img src="img/Arcadefire.jpg" alt="Arcade Fire" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Arcade Fire</h3>
               <p>Reflektor</p>
-              <p class="description"> Something....</p>
+              <p class="description"> This band's fourth album ditches all norm's.  The band escape their indie rock past to produce an album full of dance able hits..</p>
             </div>
           </div>
         </div>
@@ -123,13 +144,13 @@
  <div class="col-sm-4 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/wilco-yankee.jpg"class="img-responsive" />
+            <img src="img/wilco-yankee.jpg" alt="Wilco" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Wilco</h3>
               <p>Yankee Hotel Foxtrot</p>
-              <p class="description"> Something...</p>
+              <p class="description">Wilco skew their brand of alt-country to new levels.  This record is meant to be experienced not just listened to.</p>
             </div>
           </div>
         </div>
@@ -138,13 +159,13 @@
     <div class="col-sm-4 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/BonIver.jpg" class="img-responsive" />
+            <img src="img/BonIver.jpg" alt="Bon Iver" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Bon Iver</h3>
               <p>Bon Iver</p>
-              <p class="description"> Something...</p>
+              <p class="description"> Justin Vernon takes huge leaps from his singer songwriter beginnings and pays off big with memorable, cinematic songs.</p>
             </div>
           </div>
         </div>
@@ -153,13 +174,13 @@
   <div class="col-sm-4 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/Karate.jpg" class="img-responsive" />
+            <img src="img/Karate.jpg" alt="Karate" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Karate</h3>
               <p>Unsolved</p>
-              <p class="description"> Something...</p>
+              <p class="description">Karate produce their strongest album by spewing their own take on jazz guitar mixed with slow blends of rock</p>
             </div>
           </div>
         </div>
@@ -174,13 +195,14 @@
  <div class="col-sm-6 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/magnolia-electric-co.jpg" class="img-responsive" />
+            <img src="img/magnolia-electric-co.jpg" alt="Magnolia Electric Co" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">Magnolia Electric Co</h3>
               <p>Trials and Errors</p>
-              <p class="description"> Something...</p>
+              <p class="description">Jason Molina provides a live album that pays serious homage to Neil Young and Crazy Horse.  Which is fine in my book!</p>
+							
             </div>
           </div>
         </div>
@@ -189,13 +211,15 @@
  <div class="col-sm-6 cardContainer">
         <div class="card">
           <div class="front">
-            <img src="img/M83-Hurry-Up-Were-Dreaming.jpg" class="img-responsive" />
+            <img src="img/M83-Hurry-Up-Were-Dreaming.jpg" alt="M83" class="img-responsive" />
           </div>
           <div class="back">
             <div class="content">
               <h3 class="cardTitle">M83</h3>
               <p>Hurry Up, We're Dreaming</p>
-              <p class="description"> Something.....</p>
+              <p class="description"> 
+M83 write cinematic songs that stick in your head.  You've heard these songs in your favorite movies and shows, now hear the full product.
+</p>
             </div>
           </div>
         </div>
@@ -204,6 +228,46 @@
   </div>
 </div>
 
+	  
+	  
+	  <!--tribute-->
+	  
+	  <div id="tribute">
+    <h2>A Tribute to Chris Cornell</h2>
+   <div class="row">
+ <div class="col-sm-6 cardContainer">
+        <div class="card">
+          <div class="front">
+            <img src="img/Soundgarden_-_Louder_than_Love.png" alt="Soundgarden" class="img-responsive" />
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Soundgarden</h3>
+              <p>Louder Than Love</p>
+              <p class="description"> The second album and the first album on a major label. </p>
+							
+            </div>
+          </div>
+        </div>
+      </div>
+	
+ <div class="col-sm-6 cardContainer">
+        <div class="card">
+          <div class="front">
+            <img src="img/TempleOfTheDog.jpg" alt="Temple of the Dog" class="img-responsive" />
+          </div>
+          <div class="back">
+            <div class="content">
+              <h3 class="cardTitle">Temple of the Dog</h3>
+              <p>Temple of the Dog</p>
+              <p class="description"> A tribute record for Andrew Woood</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+ </div>
   <!--map--->
 
         <div class="row">
@@ -214,19 +278,23 @@
         </div>
         </div>
 
+	 
       <footer>
         <p>by Sally Sadaro 2017 </p>
       </footer>
-    </div>
- 
+    
    			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
         <script>window.jQuery || document.write('<script src="main js/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="main js/bootstrap.min.js"></script>
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-        <script src="main js/main.js"></script>
-        
+        <script src="main js/main.js"></script>	
     </body>
 </html>
+
+
+
+
+
 
 
 

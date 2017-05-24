@@ -4,8 +4,62 @@ body {
   font-size: 16px;
   line-height: 1.4em;
   color: #333;
-  text-align: center
+  text-align: center;
+  background-image: url("https://cdn.psfk.com/wp-content/uploads/2013/02/vinyl-record.jpg");
+
+  background-repeat:no-repeat;
+   background-size:cover;
+}
+
+
+/* The brightest duotone color 
+.darken::before {
+  background-color: rgba(221, 204, 0, 1);
+}*/
+
+/* The darkest duotone color */
+.lighten::after {
+  background-color: rgba(221, 0, 0, 1);
+}
+
+
+	/*background image */
+#vinyl {
+  background-image: url("https://cdn.psfk.com/wp-content/uploads/2013/02/vinyl-record.jpg");
+	/*remove for diff style */
+	width:100%;
+	
+
+}
+
+/* Duotone effect */
+.duotone { 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform: scale(1.03);
+
+}
+
+.duotone::before, .duotone::after {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
  
+}
+
+.duotone::before {
+  mix-blend-mode: multiply;
+}
+.duotone::after {
+  mix-blend-mode: screen;
 }
 
 .cardWrapper {
@@ -28,7 +82,7 @@ body {
 
 .content p.description {
   font-weight: 300;
-  font-size: 14px
+  font-size: 12px;
 }
 
 .cardContainer {
@@ -104,8 +158,9 @@ body {
   line-height: 25px;
 }
 
+
 .card .back {
-  background: #4286f4;
+  background:#DD0000;
   -webkit-transform: rotateY( 180deg);
   -moz-transform: rotateY( 180deg);
   -o-transform: rotateY( 180deg);
@@ -129,31 +184,66 @@ h3.cardTitle {
   font-weight: bold;
 }
 #map-container { 
-  height: 350px;
-  width: 550px;
+  height: 250px;
+  width: 450px;
 
 }
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+#map{
+	
 }
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
 }
-.row{
-  margin-left:0;
-  margin-right:0;
-}
-.About{
-  background-color:#bab4b6;
+#About{
   font-size:large;
   margin-left:250px;
   margin-right:250px;
+	color:white;
   
 }
 
+#pastmusic{
+	
+	
+}
+ul{
+	list-style-type:none;
+	
+}
 
 
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
 
+#sidebar-btn span {
+  height: 1px;
+  background: #111;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#sidebar-btn span:nth-child(2) { width: 75%; }
+
+#sidebar-btn span:nth-child(3) { width: 50%; }
+
+#sidebar {
+  background: #151718;
+  width: 180px;
+  height: 25%;
+  display: block;
+  position: absolute;
+  left: -180px;
+  top: 0;
+  transition: left 0.3s linear;
+}
+#sidebar.visible {
+  left: 0;
+  transition: left 0.3s linear;
+}

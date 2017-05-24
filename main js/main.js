@@ -4,6 +4,11 @@ $('.card').hover(function() {
   $(this).toggleClass('flipped');
 });
 	
+//Navigation
+$('#sidebar-btn').click(function() {
+  $('#sidebar').toggleClass('visible');
+});
+
 //Script to run Leaflet.js map
     //Map
 
@@ -52,6 +57,7 @@ $('a[href*=#]').on('click', function(event){
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
 });
 	
+
 	
 	});	
 
