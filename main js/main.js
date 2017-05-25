@@ -3,15 +3,9 @@ $(document).ready(function() {
 $('.card').hover(function() {
   $(this).toggleClass('flipped');
 });
-	
-//Navigation
-$('#sidebar-btn').click(function() {
-  $('#sidebar').toggleClass('visible');
-});
 
 //Script to run Leaflet.js map
     //Map
-
 //Set home location
 var map = L.map('map-container').setView([47.608013, -122.335167], 11);
 //Add Tile Layers for Open Streets, Satellite, and Map View
@@ -56,7 +50,6 @@ $('a[href*=#]').on('click', function(event){
    event.preventDefault();
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
 });
-	
 
 	
 	});	
